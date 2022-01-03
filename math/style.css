@@ -1,0 +1,107 @@
+* {
+	margin: 0;padding: 0;
+	font-family: "consolas", sans-serif;
+}
+
+
+.container {
+	color: #FF5733;
+	background-color: #273E45;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50vh
+}
+
+.n {
+	margin: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	background-color: white;
+	color: black;
+	padding: 8px 12px;
+	outline: 0;
+	border: 0;
+	border-left: 0.5px solid #ddd;
+}
+.t:hover {
+	cursor: pointer;background: orange;color: white; font-weight: bold;
+}
+
+#result {
+	background: #EDEDED;
+	color: green;
+	padding: 2px 4px;
+	border-radius: 5px;
+}
+
+.secondDegree {
+	background-color: #FF5733;
+	height: 100vh;
+
+}
+.one {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 10vh 20px;
+}
+.secondDegree h1 {
+	background-color: #FF5733;
+	color: #273E45;
+}
+label{
+	background-color: white;
+	color:black;
+	font-weight: bolder;
+	padding: 4px 12px
+}
+
+.d {
+	color: green;
+	background-color: white;
+	font-weight: bolder;
+	padding: 2px 6px;
+	margin: 0 4px;
+	border-radius: 5px;
+}
+
+.f {
+	margin: 5% 0%;
+	text-align: center;
+}
+
+#deltaR,
+#out,
+#out2 {
+	background-color: white;
+	color: black;
+	padding: 2px 12px;
+	margin: 0 8px;
+	border-radius: 5px;
+}
+
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(104% + 1.3px);
+    height: 50px;
+    transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+    fill:  #273E45;;
+}

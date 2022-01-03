@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factorial</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<div>
+			<h2>Calculate the factorial of a number</h2>
+
+			<div>
+				<form class="n"  name="form">
+					<input type="text" id='inputFact' placeholder="Number">
+					<input class="t" type="button" value="Calculate" onclick="fact()">
+				</form>
+			</div>
+
+			<div style="position: relative;">
+				<div style="position: absolute;" >
+					<h3>This is the result: <span id="result">0</span></h3>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="wave">
+	    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+	        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+	    </svg>
+	</div>
+
+
+	<div class="secondDegree">
+		<div class="one">
+			<h1>Calculate The solution of a second degree equation</h1>
+			<br><br>
+			<h3>Fill out the equation with the proper values
+				<span class="d">a</span>X² +  
+				<span class="d">b</span>X + 
+				<span class="d">c</span> = 0
+			</h3>
+			<form class="f">
+				<label>A</label>
+				<input id="a" type="number" placeholder="Enter value a"> <br> <br>
+
+				<label>B</label>
+				<input id="b" type="number" placeholder="Enter value b"> <br> <br>
+
+				<label>C</label>
+				<input id="c" type="number" placeholder="Enter value c"> <br> <br>
+
+				<input type="button" value="Enter" class="t" onclick="apply()">
+				<input type="button" value="clear" class="t" onclick="remove()">
+
+			</form>
+
+			<div style="position: relative; display: flex;justify-content: center;">
+				<div style="position: absolute;">
+					<h3>This is the equation: 
+						<span class="d" id="ma">a</span>X² +  
+						<span class="d" id="mb">b</span>X + 
+						<span class="d" id="mc">c</span> = 0
+					</h3> <br>
+					<h3>This is the result: </h3> <br>
+					<h4>Delta  = <span id="deltaR">0</span></h4> <br>
+					<h4>X1 = <span id="out">0</span></h4> <br>
+					<h4>X2 = <span id="out2">0</span></h4> <br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="main.js"></script>
+
+</body>
+</html>
